@@ -1,0 +1,36 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: Book Library REST API
+            description: |
+                A small, well-structured REST API for tracking books in a library.
+
+                Built with Symfony 7 and PHP 8.5.
+            version: 1.0.0
+        components:
+            schemas:
+                Error:
+                    type: object
+                    required: [status, title]
+                    properties:
+                        status:
+                            type: integer
+                            example: 400
+                        title:
+                            type: string
+                            example: Validation failed
+                        detail:
+                            type: string
+                            example: One or more fields are invalid.
+                        violations:
+                            type: array
+                            items:
+                                type: object
+                                properties:
+                                    property:
+                                        type: string
+                                    message:
+                                        type: string
+    areas:
+        path_patterns:
+            - ^/api(?!/doc$)
