@@ -1,0 +1,36 @@
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/.env.dev
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+# Flex sometimes regenerates these recipe artifacts; keep them out of the repo.
+/compose.override.yaml
+/templates/
+
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+# IDE / OS
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+
+# Composer
+/composer.phar
+
+# Logs
+*.log
+
+###> phpunit/phpunit ###
+/phpunit.xml
+/.phpunit.cache/
+###< phpunit/phpunit ###
