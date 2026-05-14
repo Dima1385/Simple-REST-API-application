@@ -1,0 +1,6 @@
+framework:
+    serializer:
+        enabled: true
+        default_context:
+            skip_null_values: false
+            datetime_format: 'Y-m-d'
